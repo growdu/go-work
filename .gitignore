@@ -1,5 +1,5 @@
-github.com/
-golang/
+src/github.com/
+src/golang.org/
 .vscode
 bin/
 *.out
