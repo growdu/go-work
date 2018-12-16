@@ -1,2 +1,4 @@
-./src/github.com
-./src/golang
+github.com/
+golang/
+.vscode
+bin/
