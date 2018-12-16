@@ -2,3 +2,5 @@ github.com/
 golang/
 .vscode
 bin/
+*.out
+*.exe
