@@ -1,9 +1,5 @@
-package mytest
+package mymath
 
-import (
-	"fmt"
-)
-
-func multi(x y,int){
-	return x*y
+func multi(x, y int) int {
+	return x * y
 }
