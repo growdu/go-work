@@ -4,3 +4,6 @@ src/golang.org/
 bin/
 *.out
 *.exe
+.idea/
+.vs/
+.vscode/
