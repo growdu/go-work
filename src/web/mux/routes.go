@@ -1,4 +1,4 @@
-package web
+package mux
 
 import "net/http"
 
@@ -16,18 +16,18 @@ var routes = Routes{
 		"Index",
 		"GET",
 		"/",
-		Index,
+		index,
 	},
 	Route{
 		"TodoIndex",
 		"GET",
 		"/todos",
-		TodoIndex,
+		todoIndex,
 	},
 	Route{
 		"TodoShow",
 		"GET",
 		"/todos/{todoId}",
-		TodoShow,
+		todoShow,
 	},
 }

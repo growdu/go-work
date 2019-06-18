@@ -1,7 +1,13 @@
 package main
 
-import "./web"
+import (
+	"github.com/growdu/go-work/src/web/gin"
+)
+
+//import "./web/gin"
 
 func main() {
-	web.Run()
+	gin.Start()
+	//concurrentTest.Start()
+	//mux.Run()
 }

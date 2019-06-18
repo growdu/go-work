@@ -1,12 +1,12 @@
-package web
+package mux
 
 import (
 	"log"
 	"net/http"
 )
 
-func Run(){
-	router := NewRouter()
+func Run() {
+	router := newRouter()
 
 	log.Fatal(http.ListenAndServe(":10080", router))
 }
