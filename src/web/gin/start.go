@@ -7,7 +7,7 @@ import (
 
 func Start() {
 	//初始化一个引擎
-	app := gin.Default()
+	app:=gin.Default()
 	//注册一个路由和处理函数
 	app.Any("/", webroot)
 	//绑定端口并启动运用

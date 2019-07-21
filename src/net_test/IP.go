@@ -1,9 +1,15 @@
-package net_test
+package main
 
 import (
 	"fmt"
 	"net"
 )
+
+func main(){
+	args:=[]string{"IP","192.168.1.124"}
+
+	ParseIP(args)
+}
 
 func ParseIP(args []string) {
 	if len(args) != 2 {
@@ -19,6 +25,11 @@ func ParseIP(args []string) {
 
 		fmt.Println("The address is ",addr.String())
 	}*/
+	address,err:=net.ResolveIPAddr("ip",name)
+	if err!=nil{
+		return
+	}
+	print(address)
 	mask := addr.DefaultMask()
 	network := addr.Mask(mask)
 	ones, bits := mask.Size()
