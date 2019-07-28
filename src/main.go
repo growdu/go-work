@@ -12,6 +12,7 @@ func main() {
 	//net_test.ParseIP(args)
 	//args[1]="0:0:0:0:0:0:0:1"
 	//net_test.ParseIP(args)
+
 	script.Start()
 	gin.Start()
 

@@ -29,7 +29,7 @@ func SingleThread() {
 }
 
 func multiThread() {
-	service := ":1202"
+	service := "127.0.0.1:1202"
 	tcpaddr, err := net.ResolveTCPAddr("tcp4", service)
 	Utils.CheckError(err)
 	listener, err := net.ListenTCP("tcp", tcpaddr)
