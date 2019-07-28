@@ -29,3 +29,7 @@ func ResolveTCPAddr(net, addr string) (*TCPAddr, os.Error)
 func (c *TCPConn) Write(b []byte) (n int, err os.Error)
 func (c *TCPConn) Read(b []byte) (n int, err os.Error) 
 ````
+
+## 超时设置
+
+连接断开时间
